@@ -53,6 +53,14 @@
                 color: white;
             }
 
+            #bottom {
+                font-style: bold;
+
+                font-size: 40px;
+
+                color: white;
+            }
+
             .translate{
                 transform: translate(-50%, 250px);
             }
@@ -67,7 +75,7 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
-        <span class="center courgette translate" style="display: none;">Its all that matters.</span>
+        <span id="bottom" class="center translate" style="display: none;">Its all that matters.</span>
     </body>
 
     <script>
@@ -75,7 +83,7 @@
             $(".largetext").fadeIn(7000);
 
             setTimeout(function() {
-                $(".courgette").fadeIn(7000);
+                $(".bottom").fadeIn(7000);
             }, 10000);
         });
     </script>
