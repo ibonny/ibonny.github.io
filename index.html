@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Forgiveness</title>
+
+        <script src="jquery.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Courgette|Dancing+Script|Kaushan+Script&display=swap" rel="stylesheet">
+
+        <style>
+            .vertical {
+                height: 90px;
+                line-height: 90px;
+            }
+
+            .largetext {
+                font-size: 150px;
+                font-style: bold;
+                color: white;
+
+                display: none;
+            }
+
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+
+            .lowerCenter {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                margin-left: -150px;
+            }
+
+            .bethEllen {
+                font-family: 'Beth Ellen', cursive;
+            }
+
+            .dancingScript {
+                font-family: 'Dancing Script', cursive;
+            }
+
+            .courgette {
+                font-family: 'Courgette', cursive;
+
+                font-style: bold;
+
+                font-size: 40px;
+
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: black">
+        <span class="veritical largetext center dancingScript">Forgiveness</span>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <span class="center courgette" style="display: none;">Its all that matters.</span>
+    </body>
+
+    <script>
+        $(document).ready(function() {
+            $(".largetext").fadeIn(7000);
+
+            setTimeout(function() {
+                $(".courgette").fadeIn(7000);
+            }, 10000);
+        });
+    </script>
+</html>
+
